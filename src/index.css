@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* SphereAlly Brand Colors - HSL */
+    --background: 0 0% 100%;
+    --foreground: 213 47% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 47% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 47% 20%;
+
+    /* Primary: #074A7A */
+    --primary: 201 91% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: White with subtle blue tint */
+    --secondary: 210 40% 98%;
+    --secondary-foreground: 201 91% 25%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 213 30% 45%;
+
+    /* Accent: #DFCBA8 */
+    --accent: 38 47% 77%;
+    --accent-foreground: 213 47% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 201 91% 25%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --sphere-navy: 201 91% 25%;
+    --sphere-navy-light: 201 70% 35%;
+    --sphere-navy-dark: 201 95% 18%;
+    --sphere-cream: 38 47% 77%;
+    --sphere-text: 213 47% 20%;
+  }
+
+  .dark {
+    --background: 213 47% 8%;
+    --foreground: 210 40% 98%;
+    --card: 213 47% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 213 47% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 201 70% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 40% 18%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 213 40% 18%;
+    --muted-foreground: 210 20% 65%;
+    --accent: 38 47% 77%;
+    --accent-foreground: 213 47% 20%;
+    --border: 213 30% 25%;
+    --input: 213 30% 25%;
+    --ring: 201 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-outfit antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit tracking-tight;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto px-6;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-6;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-sphere-navy-light;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-smooth {
+    animation: floatSmooth 8s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulseSlow 4s ease-in-out infinite;
+  }
+
+  .animate-scroll-bounce {
+    animation: scrollBounce 2s ease-in-out infinite;
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes floatSmooth {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-15px) rotate(1deg); }
+    50% { transform: translateY(-25px) rotate(0deg); }
+    75% { transform: translateY(-10px) rotate(-1deg); }
+  }
+
+  @keyframes pulseSlow {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.1); }
+  }
+
+  @keyframes scrollBounce {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(6px); opacity: 0.5; }
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
