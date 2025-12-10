@@ -119,7 +119,7 @@ export function HeroSection() {
           style={{ transitionDelay: '1100ms' }}
         >
           {[
-            { value: '1000+', label: 'Students' },
+            { value: '100+', label: 'Students' },
             { value: '50+', label: 'Courses' },
             { value: '100%', label: 'Dedicated' },
           ].map((stat, index) => (
