@@ -38,16 +38,7 @@ export function HeroSection() {
         backgroundSize: '60px 60px'
       }} />
 
-      <div className="relative z-10 container-narrow text-center flex flex-col items-center justify-center flex-1">
-        {/* Brand Name - Cinematic reveal - FIRST */}
-        <div className="overflow-hidden mb-6 md:mb-8">
-          <h1 
-            className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-primary-foreground tracking-tighter transition-all duration-[1000ms] ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}
-            style={{ transitionDelay: '200ms' }}
-          >
-            SphereAlly
-          </h1>
-        </div>
+     
 
         {/* 3D Logo with dramatic entrance - NOW BELOW TITLE */}
         <div 
@@ -65,14 +56,15 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Elegant divider line */}
-        <div 
-          className={`flex items-center justify-center gap-4 mb-4 md:mb-6 transition-all duration-[800ms] ${isLoaded ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'}`}
-          style={{ transitionDelay: '600ms' }}
-        >
-          <span className="h-[1px] w-12 md:w-20 bg-gradient-to-r from-transparent to-primary-foreground/50" />
-          <span className="w-2 h-2 rounded-full bg-accent" />
-          <span className="h-[1px] w-12 md:w-20 bg-gradient-to-l from-transparent to-primary-foreground/50" />
+   <div className="relative z-10 container-narrow text-center flex flex-col items-center justify-center flex-1">
+        {/* Brand Name - Cinematic reveal - FIRST */}
+        <div className="overflow-hidden mb-6 md:mb-8">
+          <h1 
+            className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-primary-foreground tracking-tighter transition-all duration-[1000ms] ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}
+            style={{ transitionDelay: '200ms' }}
+          >
+            SphereAlly
+          </h1>
         </div>
 
         {/* Slogan */}
