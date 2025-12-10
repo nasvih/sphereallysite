@@ -80,9 +80,9 @@ export function AboutSection() {
                 className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain animate-float-smooth"
               />
               <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-center">
-                <span className="text-sm font-medium text-primary bg-secondary px-4 py-2 rounded-full border border-border">
+              
                   Complex → Scholar
-                </span>
+              
               </div>
             </div>
           </div>
