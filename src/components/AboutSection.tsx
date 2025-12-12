@@ -28,7 +28,7 @@ export function AboutSection() {
             </span>
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
               From Complexity<br />
-              <span className="text-primary">to Excellence</span>
+              <span className="text-primary">to Competence</span>
             </h3>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
@@ -81,7 +81,7 @@ export function AboutSection() {
               />
               <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-center">
               
-                  Complex → Scholar
+                  Confusion → Clarity
               
               </div>
             </div>
