@@ -83,7 +83,7 @@ export function HeroSection() {
           style={{ transitionDelay: '900ms' }}
         >
           <a
-            href="https://wa.me/919744978305?text=Hi%20SphereAlly,%20I%20would%20like%20to%20enquire%20about%20your%20courses."
+            href="https://wa.me/+917592947230?text=Hi%20SphereAlly,%20I%20would%20like%20to%20enquire%20about%20your%20courses."
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 px-8 py-4 md:px-10 md:py-5 rounded-full text-base md:text-lg font-medium overflow-hidden transition-all duration-500 hover:scale-105"
