@@ -23,7 +23,7 @@ export function ContactSection() {
 💬 Message: ${formData.message || 'I would like to know more about your courses.'}`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/919744978305?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/+917592947230?text=${encodedMessage}`, '_blank');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -164,7 +164,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">WhatsApp / Call</h4>
-                  <p className="text-muted-foreground">+91 97449 78305</p>
+                  <p className="text-muted-foreground">+91 75929 47230</p>
                 </div>
               </a>
 
