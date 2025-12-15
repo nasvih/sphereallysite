@@ -103,7 +103,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/919744978305?text=Hi%20SphereAlly,%20I%20would%20like%20to%20enquire%20about%20your%20courses."
+            href="https://wa.me/+917592947230?text=Hi%20SphereAlly,%20I%20would%20like%20to%20enquire%20about%20your%20courses."
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 px-6 py-4 bg-primary text-primary-foreground rounded-full text-center font-semibold text-lg hover:bg-sphere-navy-dark transition-colors"
